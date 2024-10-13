@@ -49,3 +49,10 @@ def run(server_class=HTTPServer, handler_class=SimpleAPIHandler, port=8080):
 
 if __name__ == '__main__':
     run()
+    
+#How to run this 
+#python api_server.py
+#Initial Test
+#curl http://localhost:8080/greet
+#Post Request
+#curl -X POST http://localhost:8080/data -H "Content-Type: application/json" -d '{"message": "Hello API!"}'
